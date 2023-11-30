@@ -18,7 +18,6 @@ public class Read {
             conn = DB.getConnection();
             st = conn.createStatement();
             rs = st.executeQuery("SELECT * FROM seller");
-            
 
             while (rs.next()) {
                 System.out.println(rs.getInt(1) + " - " + rs.getString(2) + " - " + rs.getString(3) + " - " + rs.getDate(4) + " - " + rs.getInt(5));
